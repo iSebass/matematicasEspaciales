@@ -14,9 +14,9 @@ TIME_STEP = 0.01   # VELOCIDAD DE MOVIMIENTO
 pygame.init()
 pygame.display.set_caption("Péndulo Simple")
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-
+ 
 #Colores
-RED = (255,0,0)
+RED   = (255,0,0)
 BLACK = (0,0,0)
 
 # Set up simulation variables
@@ -33,7 +33,7 @@ while running:
 
     screen.fill( (255,255,255))
 
-    x1=x1+TIME_STEP*x2;
+    x1=x1+TIME_STEP*x2
     x2=x2+TIME_STEP*(-(G/L)*math.sin(x1))
 
     center_x = WIDTH//2
@@ -45,10 +45,7 @@ while running:
     pygame.draw.line(screen,RED, pos_init, pos_final, 5 )
     pygame.draw.circle(screen,BLACK, pos_final, 25 )
 
-    if x1<0:
-        x1=0
-    if x1>WIDTH:
-        x1=WIDTH
+    
     
 
     pygame.display.flip()
