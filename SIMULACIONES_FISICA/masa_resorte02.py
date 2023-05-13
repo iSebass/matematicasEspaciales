@@ -5,7 +5,7 @@ import math
 # Constants
 WIDTH, HEIGHT          = 1200, 600
 x1, x2                 = 1000, 0.1
-k, b, m                = 2,0, 1
+k, b, m                = 2,1, 1
 h                      = 0.001
 
 
