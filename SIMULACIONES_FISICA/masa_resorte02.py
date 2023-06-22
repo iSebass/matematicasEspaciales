@@ -5,14 +5,16 @@ import math
 # Constants
 WIDTH, HEIGHT          = 1200, 600
 x1, x2                 = 1000, 0.1
-k, b, m                = 2,0.5, 1
+k, b, m                = 2, 0.1, 1
 h                      = 0.001
+
+
 
 
 # Initialize pygame
 pygame.init()
-pygame.display.set_caption("Péndulo Simple")
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Masa Resorte Amortiguador")
+screen = pygame.display.set_mode( (WIDTH, HEIGHT) )
 
 
 #Colores
@@ -33,7 +35,7 @@ while running:
     x1=x1+h*x2
     x2=x2+h*(-(k/m)*x1-(b/m)*x2)
 
-    pygame.draw.circle(screen, BLACK, (x1, HEIGHT//2), 25 )
+    pygame.draw.circle(screen, BLACK, (x1, HEIGHT//2), 15 )
     
     if x1 > WIDTH - 25 or x1 < 0 + 25:
         x2 = -x2
