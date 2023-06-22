@@ -5,7 +5,15 @@ import math
 # Constants
 WIDTH, HEIGHT          = 1200, 600
 x1, x2                 = 1000, 0.1
+<<<<<<< HEAD
 k, b, m                = 2, 0.1, 1
+=======
+<<<<<<< HEAD
+k, b, m                = 2,1, 1
+=======
+k, b, m                = 2,0.5, 1
+>>>>>>> b361a8c57d36f3c50e4d339996fd8400a518cce0
+>>>>>>> ee3e8f9dc345ffff628e3ef3c67901c04f9455e6
 h                      = 0.001
 
 
