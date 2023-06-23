@@ -28,7 +28,7 @@ ciclos = 1
 x = np.linspace(-0.0001, 2*ciclos*L, 1000)
 f = 0
 n = 1
-n_total = 50
+n_total = 10
 
 while n<n_total:
     
